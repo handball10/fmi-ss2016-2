@@ -1,0 +1,47 @@
+% Template for FMI-2011 paper; to be used with:
+%          fmiconf.sty - LaTeX style file, and
+%          IEEEbib.bst - IEEE bibliography style file.
+% --------------------------------------------------------------------------
+\documentclass{article}
+\usepackage{fmiconf,amsmath,epsfig}
+
+\usepackage{german}
+\usepackage[utf8]{inputenc}
+\usepackage{url}
+
+% Example definitions.
+\def\x{{\mathbf x}}
+\def\L{{\cal L}}
+
+% Title.
+\title{Kann eine Drohne präzise nur mit den Sensoren eines Smartphones gesteuert werden?}
+\name{Stefan Baumann, Florian Gümbel}
+\address{Technische Hochschule Mittelhessen}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+Drohne ist mittlerweile ein fest etablierter Begriff, der ein von vier Propellern und Elektromotor angetriebenes Flugobjekt beschreibt. Die Steuerung erfolgt zumeist über eine Anwendung auf Smartphone / Tablet. Dabei wird hauptsächlich ein virtueller Joystick auf dem Bildschirm angezeigt der mit Gesten gesteuert wird.\\ Eine andere aber bisher aber weitestgehend eingeschränkt genutzte Art der Steuerung ist der Einsatz von Hilfe Gyro- und Bewegungssensor des Smartphones. Eingeschränkt insofern, als dass nicht alle Möglichkeiten der Sensoren genutzt werden. An diesem Ansatz soll mit der Entwicklung einer nativen Android App für Smartphones angeknüpft werden. Ziel ist es, die Bewegungen, die vom Benutzer mit dem Smartphone getätigt werden, an die Drohne zu übertragen. Zusätzlich sollen Gesten das Steuern von Foto- und Vieoaufnahmen und deren Übertragung auf das Display des Smartphones vervollständigen.\\ Am Ende gilt es die Frage zu beantworten, ob die Steuerung einer Drohne präzise genug ist, wenn diese komplett auf Gyroskop und Accelerometer des Smartphones gekoppelt ist.
+
+\end{abstract}
+
+\section{Einleitung}
+\label{sec:einleitung}
+Immer mehr erfreuen sich sogenannte Drohnen, oder auch Quadrocopter genannt, an Beliebtheit. Angetrieben werden die vier kleinen Propeller durch Elektromotoren. Die Steuerung erfolgt über eine einfache Fernsteuerung - meist über ein WLAN-Netzwerk - wie bspw. einer Kombination aus Fernsteuerungseinheit mit Tablet / Smartphone oder einer reinen Anwendung auf Tablet / Smartphone. Bei letzteren ist es üblich, die Drohne über einen digitalen Joystick zu steuern. Dabei wird lediglich die Bewegung des Joysticks umgerechnet und auf die Drohne Übertragen, während das Smartphone ruhig in der Hand liegt.\\ Die Idee ist es nun, eine weitere Möglichkeit zu untersuchen, bei der zwei Sensoren des Smartphones für die Steuerung zum Einsatz kommen. Dabei soll anstelle der Bedienung auf dem Touchscreen das gesamte Gerät als Steuerungseinheit genutzt werden. \\Gyroskop und Accelerometer dienen zur Erfassung der Bewegungen und das Smartphone überträgt die diese auf die Drohne. Zusätzlich sollen Gesten weitere Funktionen zur Verfügung stellen. Dazu zählen unter anderem das Aufnehmen von Fotos und Videos.
+
+\section{Verwandte Arbeiten}
+\label{sec:verwandteArbeiten}
+Derzeit gibt es nicht nur Hersteller eigenen Anwendungen zum Steuern einer Drohne sondern bereits eine Vielzahl von Drittanbietersoftware. 
+\\ Eine davon ist die hauseigenen Anwendung AR.FreeFlight des Drohnenherstellers Parrot \footnote{https://play.google.com/store/apps/details?id=com.parrot.freeflight\&hl=de}, die Steuerung durch Neigung unterstützt. Allerdings wird durch die Neigung nur die Flugrichtung bestimmt und nicht der gesamte Steuerungsprozess. Das eigentliche Fliegen geschieht mit Joystick-ähnlichen Bedienelementen auf dem Display. \\Bereits Anfang 2015 hat Sony ein Projekt vorgestellt, in dem eine Drohne mittels SmartWatch 2, SmartEyeglass und Smartphone gesteuert wird\footnote{http://developer.sonymobile.com/2015/01/05/control-a-mini-drone-with-smarteyeglass-and-smartwatch-2-tutorial/}. In diesem Fall ist die SmartWatch via Bluetooth mit dem Smartphone verbunden und überträgt die Bewegung per W-Lan an die Drohne. Über das Dsiplay der Smartwatch lassen sich dabei die verschiedenen Steuerungs-Modi umschalten.
+
+\section{Methodik}
+Beschreibung des Vorgehens
+Unterteilung in logische abschnitte
+konzept / verfahrensvergleiche / analyse MEthodenauswahl
+implementierung / erinscrämungen / realisierung
+\section{Ergebnisse und Evaluation}
+
+\section{Zusammenfassung und Ausblick}
+\bibliography{Template}{}
+\bibliographystyle{IEEEbib}
+\end{document}
