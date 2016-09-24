@@ -1,8 +1,10 @@
 package com.parrot.sdksample.activity;
 
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -17,6 +19,7 @@ import com.parrot.arsdk.arcontroller.ARCONTROLLER_DEVICE_STATE_ENUM;
 import com.parrot.arsdk.ardiscovery.ARDiscoveryDeviceService;
 import com.parrot.sdksample.R;
 import com.parrot.sdksample.drone.MiniDrone;
+import com.parrot.sdksample.drone.SensorController;
 
 public class MiniDroneActivity extends AppCompatActivity {
     private static final String TAG = "MiniDroneActivity";
@@ -28,22 +31,34 @@ public class MiniDroneActivity extends AppCompatActivity {
     private TextView mBatteryLabel;
     private Button mTakeOffLandBt;
     private Button mDownloadBt;
+    private Button mSensorStateButton;
 
     private int mNbMaxDownload;
     private int mCurrentDownloadIndex;
+
+    private SensorController sensorController;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_minidrone);
 
-        initIHM();
+
 
         Intent intent = getIntent();
         ARDiscoveryDeviceService service = intent.getParcelableExtra(DeviceListActivity.EXTRA_DEVICE_SERVICE);
         mMiniDrone = new MiniDrone(this, service);
         mMiniDrone.addListener(mMiniDroneListener);
+        sensorController = new SensorController(
+                mMiniDrone,
+                (SensorManager) getSystemService(Context.SENSOR_SERVICE),
+                this,
+                (TextView) findViewById(R.id.textX),
+                (TextView) findViewById(R.id.textY),
+                (TextView) findViewById(R.id.textZ)
+        );
 
+        initIHM();
     }
 
     @Override
@@ -95,7 +110,22 @@ public class MiniDroneActivity extends AppCompatActivity {
 
         findViewById(R.id.emergencyBt).setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+
                 mMiniDrone.emergency();
+
+            }
+        });
+
+        mSensorStateButton = (Button)findViewById(R.id.sensorControlButton);
+        mSensorStateButton.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                sensorController.toggleSensorStatus();
+
+                mSensorStateButton.setText(
+                        sensorController.getStatus() ?
+                                "Disable Sensor" :
+                                "Enable Sensor"
+                );
             }
         });
 
