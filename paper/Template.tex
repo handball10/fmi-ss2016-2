@@ -41,10 +41,16 @@ Um eine Solche Drohne zu Steuern gibt es verschiedene Möglichkeiten. Abhängig 
 \end{figure}
 
 
-\section{Verwandte Arbeiten}
+\section{Stand der Technik}
 \label{sec:verwandteArbeiten}
-Derzeit gibt es nicht nur Hersteller eigenen Anwendungen zum Steuern einer Drohne sondern bereits eine Vielzahl von Drittanbietersoftware. 
-\\ Eine davon ist die hauseigenen Anwendung AR.FreeFlight des Drohnenherstellers Parrot \footnote{https://play.google.com/store/apps/details?id=com.parrot.freeflight\&hl=de}, die Steuerung durch Neigung unterstützt. Allerdings wird durch die Neigung nur die Flugrichtung bestimmt und nicht der gesamte Steuerungsprozess. Das eigentliche Fliegen geschieht mit Joystick-ähnlichen Bedienelementen auf dem Display. \\Bereits Anfang 2015 hat Sony ein Projekt vorgestellt, in dem eine Drohne mittels SmartWatch 2, SmartEyeglass und Smartphone gesteuert wird\footnote{http://developer.sonymobile.com/2015/01/05/control-a-mini-drone-with-smarteyeglass-and-smartwatch-2-tutorial/}. In diesem Fall ist die SmartWatch via Bluetooth mit dem Smartphone verbunden und überträgt die Bewegung per W-Lan an die Drohne. Über das Dsiplay der Smartwatch lassen sich dabei die verschiedenen Steuerungs-Modi umschalten.
+\subsection{Drohnensteuerung}
+Neben vielen Drittherstelleranwendungen bieten, wie bereits in der Einleitung erwähnt, auch die Hersteller der Drohnen eigene Anwendungen zum steuern der Drohne an.
+\\ Die bekannte Firma Parrot stellt eine Vielzahl verschiedener Apps zum Steuern bereit. Eine davon ist die FreeFlight-App \footnote{https://play.google.com/store/apps/details?id=com.parrot.freeflight\&hl=de}, die Steuerung durch den Gyroscope-Sensor unterstützt. Dabei fliegt die Drohne in die Richtung in der das Smartphone geneigt wird ohne sich dabei nach vorne zu drehen. Eine Höhenveränderung oder Drehen ist nicht möglich. Auf eine Implementierung des Accelerometer wurde hierbei verzichtet.
+\\Bereits Anfang 2015 hat Sony ein Projekt vorgestellt, in dem eine Drohne mittels SmartWatch 2, SmartEyeglass und Smartphone gesteuert wird \footnote{http://developer.sonymobile.com/2015/01/05/control-a-mini-drone-with-smarteyeglass-and-smartwatch-2-tutorial/}. In diesem Fall ist die SmartWatch via Bluetooth mit dem Smartphone verbunden und überträgt die Bewegung per W-Lan an die Drohne. Über das Display der Smartwatch lassen sich dabei die verschiedenen Steuerungs-Modi umschalten. Hier kommen sowohl Accelerometer als auch Gyroscope zum Einsatz.
+
+\subsection{Einsatz von Sensoren}
+Die Sensoren finden in vielen Bereichen Verwendung und sind bereits in jedem aktuellen Smartphone Standard. Sie werden meistens in Kombination genutzt wie beispielsweise bei der Erkennung von Bewegungsänderung oder der Messung von physischen Aktivitäten \cite{wu2012classification}. 
+\\Um die derzeitige Lage oder Beschleunigung des Gerätes zu ermitteln, kommt der Accelerometer oder auch Beschleunigungssensor zum Einsatz. Mittels der Schwerkraft wird ermittelt in welche Richtung das Smartphone bewegt wird. In der Regel kommen die X- Y- und Z-Achse zum Einsatz. Die rotatorische Geschwindigkeit und somit auch die Drehbewegung des Smartphones werden vom Gyroskop gemessen. Dazu wird die Corioliskraft und das sogenannte Stimmgabelprinzip genutzt. Hier kommen Längs- Quer und Hochachse für die Positionsbestimmung im Raum zum Einsatz.
 
 \section{Methodik}
 Beschreibung des Vorgehens

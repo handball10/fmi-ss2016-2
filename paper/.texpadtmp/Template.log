@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.7)  23 SEP 2016 18:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.7)  26 SEP 2016 12:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -402,12 +402,12 @@ File: gyro.jpg Graphic file (type jpg)
 Package pdftex.def Info: gyro.jpg used on input line 37.
 (pdftex.def)             Requested size: 241.84842pt x 126.16914pt.
 
-Overfull \hbox (7.52747pt too wide) in paragraph at lines 47--47
+Overfull \hbox (7.52747pt too wide) in paragraph at lines 48--48
 [][]\OT1/ptm/m/n/8 https://play.google.com/store/apps/details?id=com.parrot.freeflight&hl=de| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--47
+Underfull \hbox (badness 10000) in paragraph at lines 49--49
 [][]\OT1/ptm/m/n/8 http://developer.sonymobile.com/2015/01/05/control-a-mini-drone-
  []
 
@@ -415,32 +415,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 47--47
 
 
 
- <./gyro.jpg>] (/Users/Stefan/Documents/workspace/fmi-ss2016/paper/.texpadtmp/Template.bbl
-
-/Users/Stefan/Documents/workspace/fmi-ss2016/paper/.texpadtmp/Template.bbl:3: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.3 \end{thebibliography}
-                         
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-) [2
+ <./gyro.jpg>] (/Users/Stefan/Documents/workspace/fmi-ss2016/paper/.texpadtmp/Template.bbl) [2
 
 ] (/Users/Stefan/Documents/workspace/fmi-ss2016/paper/.texpadtmp/Template.aux) ) 
 Here is how much of TeX's memory you used:
- 2662 strings out of 493089
- 35148 string characters out of 6134843
- 105517 words of memory out of 5000000
- 6093 multiletter control sequences out of 15000+600000
- 20365 words of font info for 44 fonts, out of 8000000 for 9000
+ 2665 strings out of 493089
+ 35192 string characters out of 6134843
+ 105520 words of memory out of 5000000
+ 6095 multiletter control sequences out of 15000+600000
+ 22049 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,8n,23p,1124b,280s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /Users/Stefan/Documents/workspace/fmi-ss2016/paper/.texpadtmp/Template.pdf (2 pages, 76515 bytes).
+Output written on /Users/Stefan/Documents/workspace/fmi-ss2016/paper/.texpadtmp/Template.pdf (2 pages, 82255 bytes).
 PDF statistics:
  25 PDF objects out of 1000 (max. 8388607)
  16 compressed objects within 1 object stream
