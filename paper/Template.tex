@@ -29,8 +29,8 @@ Drohne ist mittlerweile ein fest etablierter Begriff, der ein von vier Propeller
 \label{sec:einleitung}
 Immer mehr erfreuen sich sogenannte Drohnen an Beliebtheit. Diese neue Form des unbemannten Flugobjekte zeichnet sich zumeist dadurch aus, dass sie, anders als herkömmliche bekannte Modellflugzeuge, mindestens vier kleine Propeller hat welche über Elektromotoren angetrieben werden und die Drohne senkrecht starten lassen. Die Anzahl der Propeller kann variieren. Angefangen von Quadrocopter über Hexacopter und Octacopter bis hin zu Multicopter. Der Einsatzzweck einer solchen Drohne geht von Vermessungstechnik über Luftaufnahmen und Erkundung bis hin zur Jagd.
 
-Um eine Solche Drohne zu Steuern gibt es verschiedene Möglichkeiten. Abhängig von Modell lassen sich klassische Fernsteuerungen entweder direkt mit der Drohne Verbinden oder über Umweg mit Hilfe einer App. Nahezu jeder Drohnenhersteller bietet eine eigene App für alle gängigen Smartphones oder Tablets an. Die Verbindung findet je nach Modell über W-Lan oder Bluetooth statt. Für die Steuerung mittels App auf dem Gerät steht ein digitaler Joystick zur Verfügung dessen Bewegung umgerechnet und auf die Drohne Übertragen wird während das Gerät ruhig in der Hand liegt. Meistens wird über den linken Joystick die vertikale Bewegung gesteuert. Dazu zählt die Veränderung Höhe und die Drehung in beide Richtungen. Der Rechte Joystick ist für die horizontale Bewegung zuständig. Damit ist das Schwenken zur Seite sowie das Vorwärts- und Rückwärtsfliegen gemeint. 
-\ Die Idee ist es nun, eine weitere Möglichkeit zu untersuchen, bei der zwei Sensoren des Smartphones für die Steuerung zum Einsatz kommen. Dabei soll anstelle der Bedienung auf dem Touchscreen das gesamte Gerät als Steuerungseinheit genutzt werden. \\Gyroskop und Accelerometer dienen zur Erfassung der Bewegungen und das Smartphone überträgt die diese auf die Drohne. Zusätzlich sollen Gesten weitere Funktionen zur Verfügung stellen. Dazu zählen unter anderem das Aufnehmen von Fotos und Videos.
+Um eine Solche Drohne zu Steuern gibt es verschiedene Möglichkeiten. Abhängig von Modell lassen sich klassische Fernsteuerungen entweder direkt mit der Drohne Verbinden oder über Umweg mit Hilfe einer App. Nahezu jeder Drohnenhersteller bietet eine eigene App für alle gängigen Smartphones oder Tablets an. Die Verbindung findet je nach Modell über W-Lan oder Bluetooth statt. Für die Steuerung mittels App auf dem Gerät steht ein digitaler Joystick zur Verfügung dessen Bewegung umgerechnet und auf die Drohne Übertragen wird während das Gerät ruhig in der Hand liegt. Meistens wird über den linken Joystick die vertikale Bewegung gesteuert. Dazu zählt die Veränderung Höhe und die Drehung in beide Richtungen. Der Rechte Joystick ist für die horizontale Bewegung zuständig. Damit ist das Schwenken zur Seite sowie das Vorwärts- und Rückwärtsfliegen gemeint. Teilweise werden auch Sensoren zu Steuerung unterstützt.
+\\ Die Idee ist es nun, eine weitere Möglichkeit zu untersuchen, bei der zwei Sensoren des Smartphones für die gesamte Steuerung zum Einsatz kommen. Dabei soll anstelle der Bedienung auf dem Touchscreen nur das Gerät als Steuerungseinheit genutzt werden. \\Gyroskop und Accelerometer dienen zur Erfassung der Bewegungen worauf das Smartphone diese auf die Drohne übeträgt. 
 \begin{figure}[htb]
 \begin{minipage}[b]{1.0\linewidth}
   \centering
@@ -53,11 +53,21 @@ Die Sensoren finden in vielen Bereichen Verwendung und sind bereits in jedem akt
 \\Um die derzeitige Lage oder Beschleunigung des Gerätes zu ermitteln, kommt der Accelerometer oder auch Beschleunigungssensor zum Einsatz. Mittels der Schwerkraft wird ermittelt in welche Richtung das Smartphone bewegt wird. In der Regel kommen die X- Y- und Z-Achse zum Einsatz. Die rotatorische Geschwindigkeit und somit auch die Drehbewegung des Smartphones werden vom Gyroskop gemessen. Dazu wird die Corioliskraft und das sogenannte Stimmgabelprinzip genutzt. Hier kommen Längs- Quer und Hochachse für die Positionsbestimmung im Raum zum Einsatz.
 
 \section{Methodik}
-Beschreibung des Vorgehens
-Unterteilung in logische abschnitte
-konzept / verfahrensvergleiche / analyse MEthodenauswahl
-implementierung / erinscrämungen / realisierung
+
+\subsection{Eingesetzte Drohne und verwendete Technologien}
+Als Testdrohne wurde für eine Parrot Airborne Night Drone der Kategorie Mini-Drohne entschieden\footnote{https://www.parrot.com/de/minidrohnen/parrot-airborne-night-maclane#parrot-airborne-night-maclane}, da sie folgende Vorteile mit sich bringt: 
+\begin{itemize}
+	\item Relativ geringen Anschaffungspreis
+	\item Unterstützt das aktuelle Parrot SDK3
+	\item Gute Testbarkeit in Gebäuden durch geringe Größe 
+\end{itemize}
+
+Wie in den vorangegangenen Kapitel schon erläutert wurde, gibt es aktuell keine App die eine volle Steuerung über die Sensoren unterstützt. Aus diesen Gründen wurde zu Testzwecken ein Prototyp entwickelt, welcher die gestellten Anforderungen erfüllt.Aus Gründen der Flexibilität wurde für die Umsetzung des Prototypen für eine native Android-Anwendung entschieden.\\ Als Verbindung zwischen Anwendung und Drohne kommt Bluetooth zum Einsatz. 
+
+\subsection{}
+
 \section{Ergebnisse und Evaluation}
+
 
 \section{Zusammenfassung und Ausblick}
 \bibliography{Template}{}
