@@ -1,5 +1,20 @@
 \begin{thebibliography}{1}
 
+\bibitem{flypad}
+``Parrot {F}lypad,''
+  \url{https://www.parrot.com/de/zubehor/minidrohnen/parrot-flypad#parrot-flypad},
+\newblock [Stand:September 2016].
+
+\bibitem{freeflightapp}
+``Freeflight {A}pp,''
+  \url{https://play.google.com/store/apps/details?id=com.parrot.freeflight3&hl=de},
+\newblock [Stand:September 2016].
+
+\bibitem{sonyflight}
+``Smarteyeglass und smartwatch,''
+  \url{http://developer.sonymobile.com/2015/01/05/control-a-mini-drone-with-smarteyeglass-and-smartwatch-2-tutorial/},
+\newblock [Stand:September 2016].
+
 \bibitem{wu2012classification}
 Wanmin Wu, Sanjoy Dasgupta, Ernesto~E Ramirez, Carlyn Peterson, and Gregory~J
   Norman,
@@ -7,5 +22,10 @@ Wanmin Wu, Sanjoy Dasgupta, Ernesto~E Ramirez, Carlyn Peterson, and Gregory~J
   motion sensors,''
 \newblock {\em Journal of medical Internet research}, vol. 14, no. 5, pp. e130,
   2012.
+
+\bibitem{minidrone}
+``Parrot {A}irborne {N}ight {M}inidrone,''
+  \url{https://www.parrot.com/de/minidrohnen/parrot-airborne-night-maclane#parrot-airborne-night-maclane},
+\newblock [Stand:September 2016].
 
 \end{thebibliography}

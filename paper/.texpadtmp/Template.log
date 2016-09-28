@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.7)  26 SEP 2016 18:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.7)  28 SEP 2016 13:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -396,66 +396,132 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 22.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
- <gyro.jpg, id=1, 763.85374pt x 398.48875pt>
-File: gyro.jpg Graphic file (type jpg)
- <use gyro.jpg>
-Package pdftex.def Info: gyro.jpg used on input line 37.
-(pdftex.def)             Requested size: 241.84842pt x 126.16914pt.
 
-Overfull \hbox (7.52747pt too wide) in paragraph at lines 48--48
-[][]\OT1/ptm/m/n/8 https://play.google.com/store/apps/details?id=com.parrot.freeflight&hl=de| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 49--49
-[][]\OT1/ptm/m/n/8 http://developer.sonymobile.com/2015/01/05/control-a-mini-drone-
+Overfull \hbox (2.1944pt too wide) in paragraph at lines 43--45
+\OT1/ptm/m/n/10 Auf dem Rech-ten Joy-stick kann ei-ne schnel-le Kurs[]ande-
  []
 
 [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 
- <./gyro.jpg>]
-./Template.tex:58: You can't use `macro parameter character #' in horizontal mode.
-<argument> ...hnen/parrot-airborne-night-maclane##
-                                                  parrot-airborne-night-macl...
-l.58 ...ght-maclane#parrot-airborne-night-maclane}
-                                                  , da sie folgende Vorteile...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
+] <freeflight_mini.png, id=9, 564.60938pt x 244.66406pt>
+File: freeflight_mini.png Graphic file (type png)
+ <use freeflight_mini.png>
+Package pdftex.def Info: freeflight_mini.png used on input line 54.
+(pdftex.def)             Requested size: 241.84842pt x 104.8003pt.
+ <gyro.jpg, id=11, 763.85374pt x 398.48875pt>
+File: gyro.jpg Graphic file (type jpg)
+ <use gyro.jpg>
+Package pdftex.def Info: gyro.jpg used on input line 70.
+(pdftex.def)             Requested size: 241.84842pt x 126.16914pt.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--58
-[][]\OT1/ptm/m/n/8 https://www.parrot.com/de/minidrohnen/parrot-airborne-night-
- []
-
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 60.
-(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsptm.fd
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 81.
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 60.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 81.
 
-Underfull \hbox (badness 1092) in paragraph at lines 65--66
-[]\OT1/ptm/m/n/10 Wie in den vor-an-ge-gan-ge-nen Ka-pi-tel schon erl[]autert
+Underfull \hbox (badness 1668) in paragraph at lines 88--89
+[]\OT1/ptm/m/n/10 Nach ei-ner Flug-zeit von ma-xi-mal 9 Mi-nu-ten (oh-ne
  []
 
-(/Users/Stefan/Documents/workspace/fmi-ss2016/paper/.texpadtmp/Template.bbl) [2] (/Users/Stefan/Documents/workspace/fmi-ss2016/paper/.texpadtmp/Template.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
+
+ []
+
+
+Overfull \hbox (1.57498pt too wide) in paragraph at lines 93--94
+[]\OT1/ptm/m/n/10 Als Ver-bin-dung zwi-schen An-wen-dung und Droh-ne kommt
+ []
+
+[2 <./freeflight_mini.png> <./gyro.jpg>] <gameplay.png, id=17, 995.72pt x 597.23125pt>
+File: gameplay.png Graphic file (type png)
+ <use gameplay.png>
+Package pdftex.def Info: gameplay.png used on input line 110.
+(pdftex.def)             Requested size: 241.84842pt x 145.06078pt.
+
+Underfull \vbox (badness 1590) has occurred while \output is active []
+
+ (/Users/Stefan/Documents/workspace/fmi-ss2016/paper/.texpadtmp/Template.bbl
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 5.
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 4--7
+[]\OT1/ptm/m/n/10 ``Parrot Fly-pad,'' $\OT1/pcr/m/n/10 https : / / www . parrot . com /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--7
+\OT1/pcr/m/n/10 de / zubehor / minidrohnen / parrot-[]flypad #
+ []
+
+[3 <./gameplay.png>]
+Underfull \hbox (badness 6775) in paragraph at lines 9--12
+[]\OT1/ptm/m/n/10 ``Freeflight App,'' $\OT1/pcr/m/n/10 https : / / play . google . com /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--12
+\OT1/pcr/m/n/10 store / apps / details ? id = com . parrot .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--17
+[]\OT1/ptm/m/n/10 ``Smarteyeglass und smart-watch,'' $\OT1/pcr/m/n/10 http :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--17
+\OT1/pcr/m/n/10 / / developer . sonymobile . com / 2015 / 01 / 05 /
+ []
+
+
+Overfull \hbox (174.96622pt too wide) in paragraph at lines 14--17
+\OT1/pcr/m/n/10 control-[]a-[]mini-[]drone-[]with-[]smarteyeglass-[]and-[]smartwatch-[]2-[]tutorial/$\OT1/ptm/m/n/10 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--30
+[]\OT1/ptm/m/n/10 ``Parrot Air-bor-ne Night Mi-ni-dro-ne,'' $\OT1/pcr/m/n/10 https :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--30
+\OT1/pcr/m/n/10 / / www . parrot . com / de / minidrohnen /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--30
+\OT1/pcr/m/n/10 parrot-[]airborne-[]night-[]maclane #
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--30
+\OT1/pcr/m/n/10 parrot-[]airborne-[]night-[]maclane$\OT1/ptm/m/n/10 ,
+ []
+
+) [4
+
+] (/Users/Stefan/Documents/workspace/fmi-ss2016/paper/.texpadtmp/Template.aux) ) 
 Here is how much of TeX's memory you used:
- 2682 strings out of 493089
- 35494 string characters out of 6134843
- 105520 words of memory out of 5000000
- 6109 multiletter control sequences out of 15000+600000
- 22049 words of font info for 46 fonts, out of 8000000 for 9000
+ 2728 strings out of 493089
+ 36219 string characters out of 6134843
+ 106552 words of memory out of 5000000
+ 6150 multiletter control sequences out of 15000+600000
+ 17809 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,8n,23p,1124b,280s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /Users/Stefan/Documents/workspace/fmi-ss2016/paper/.texpadtmp/Template.pdf (2 pages, 90921 bytes).
+ 38i,8n,23p,1127b,295s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on /Users/Stefan/Documents/workspace/fmi-ss2016/paper/.texpadtmp/Template.pdf (4 pages, 384232 bytes).
 PDF statistics:
- 29 PDF objects out of 1000 (max. 8388607)
- 19 compressed objects within 1 object stream
+ 43 PDF objects out of 1000 (max. 8388607)
+ 27 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
