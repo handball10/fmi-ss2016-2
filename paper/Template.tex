@@ -130,7 +130,7 @@ Drohne weitergereicht. Die Drohne nimmt dabei Werte von -100 bis 100 entgegen, w
 (-)0.15, (-)0.25, \textgreater{} (-)0.25 verwendet. Neigungen mit Werten zwischen (-)0.15 und (-)0.25 wirken eine 40\%-ige Neigung, Werte größer (-)0.25 eine 60\%-ige Neigung. Für Werte kleiner
 (-)0.15 werden als Null-Position angenommen und die Drohnen-Neigung wird auf 0 zurückgesetzt.
 
-Bei der Verarbeitung der Daten des Beschleunigungssensor werden die Werte in eine lineare Komponente und eine Gravitatinoskomponente aufgeteilt. Die lineare ist stets positiv und ermöglicht eine schnelle Filterung bzw. ein schnelles Stepping zur Steuerung. Die Graviatinoskomponente dagegen dient als Richtungs-Indikator.
+Bei der Verarbeitung der Daten des Beschleunigungssensor werden die Werte in eine lineare Komponente und eine Gravitationskomponente aufgeteilt. Die lineare ist stets positiv und ermöglicht eine schnelle Filterung bzw. ein schnelles Stepping zur Steuerung. Die Graviationskomponente dagegen dient als Richtungs-Indikator.
 Als Mindest-Grenzwert der linearen Komponente ist 6 festgelegt. Sind lineare Werte größer, erfolgt ein Steuerbefehl an die Drohne mit dem der Beschleunigungsachse verknüpften Richtung.
 Dies sind Start- und Landung auf der Z-Achse sowie Drehungen um 90 Grad bzw. 180 Grad um die Drehachse der Drohne.
 
