@@ -34,11 +34,20 @@ public class AccelerationController implements SensorEventListener {
     public void onSensorChanged(SensorEvent event){
         final float alpha = 0.8f;
 
+
+
         // Isolate the force of gravity with the low-pass filter.
         gravity[0] = alpha * gravity[0] + (1 - alpha) * event.values[0];
         gravity[1] = alpha * gravity[1] + (1 - alpha) * event.values[1];
         gravity[2] = alpha * gravity[2] + (1 - alpha) * event.values[2];
 
+//        Log.d("ACC-RAW-X", ""+event.values[0]);
+//        Log.d("ACC-RAW-Y", ""+event.values[1]);
+//        Log.d("ACC-RAW-Z", ""+event.values[2]);
+//
+//        Log.d("ACC-RAW-GX", ""+gravity[0]);
+//        Log.d("ACC-RAW-GY", ""+gravity[1]);
+//        Log.d("ACC-RAW-GZ", ""+gravity[2]);
         // Remove the gravity contribution with the high-pass filter.
         linear_acceleration[0] = event.values[0] - gravity[0];
         linear_acceleration[1] = event.values[1] - gravity[1];
@@ -48,8 +57,16 @@ public class AccelerationController implements SensorEventListener {
 //        Log.d("ACC-Y", ""+linear_acceleration[1]);
 
         if(linear_acceleration[2] > 6) {
-            start();
-            Log.d("ACC-Z", "" + linear_acceleration[2]);
+            //start();
+            Log.d("ACC-Z", "" + linear_acceleration[2] + " - " +gravity[2]);
+        }
+
+        if(linear_acceleration[1] > 6){
+            Log.d("ACC-Y", "" + linear_acceleration[1] + " - " +gravity[1]);
+        }
+
+        if(linear_acceleration[0] > 6){
+            Log.d("ACC-X", "" + linear_acceleration[0] + " - " +gravity[0]);
         }
     }
 

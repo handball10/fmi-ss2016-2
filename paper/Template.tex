@@ -21,7 +21,7 @@
 \begin{document}
 \maketitle
 \begin{abstract}
-Drohne ist mittlerweile auch im Konsumbereich ein fest etablierter Begriff, der ein von vier Propellern und Elektromotor angetriebenes Flugobjekt beschreibt. Die Steuerung erfolgt zumeist über eine Anwendung auf Smartphone / Tablet. Dabei wird hauptsächlich ein virtueller Joystick auf dem Bildschirm angezeigt der mit Gesten gesteuert wird.\\ Eine andere aber bisher aber weitestgehend eingeschränkt genutzte Art der Steuerung ist der Einsatz von Hilfe Gyroscope und Accelerometer des Smartphones. Eingeschränkt insofern, als dass nicht alle Möglichkeiten der Sensoren genutzt werden. An diesem Ansatz soll mit der Entwicklung einer nativen Android App für Smartphones angeknüpft werden. Ziel ist es, die Bewegungen, die vom Benutzer mit dem Smartphone getätigt werden, an die Drohne zu übertragen. Zusätzlich sollen Gesten das Steuern von Foto- und Videoaufnahmen und deren Übertragung auf das Display des Smartphones vervollständigen.\\ Am Ende gilt es die Frage zu beantworten, ob die Steuerung einer Drohne präzise genug ist, wenn diese komplett über Gyroscope und Accelerometer des Smartphones erfolgt.
+Drohne ist mittlerweile auch im Konsumbereich ein fest etablierter Begriff, der ein mit motorisierten Propellern angetriebenes Flugobjekt beschreibt. Die Steuerung erfolgt zumeist über eine Anwendung auf Smartphone / Tablet. Dabei wird hauptsächlich ein virtueller Joystick auf dem Bildschirm angezeigt der mit Gesten gesteuert wird.\\ Eine andere aber bisher aber weitestgehend eingeschränkt genutzte Art der Steuerung ist der Einsatz von Hilfe Gyroscope und Accelerometer des Smartphones. Eingeschränkt insofern, als dass nicht alle Möglichkeiten der Sensoren genutzt werden. An diesem Ansatz soll mit der Entwicklung einer nativen Android App für Smartphones angeknüpft werden. Ziel ist es, die Bewegungen, die vom Benutzer mit dem Smartphone getätigt werden, an die Drohne zu übertragen. Zusätzlich sollen Gesten das Steuern von Foto- und Videoaufnahmen und deren Übertragung auf das Display des Smartphones vervollständigen.\\ Am Ende gilt es die Frage zu beantworten, ob die Steuerung einer Drohne präzise genug ist, wenn diese komplett über Gyroscope und Accelerometer des Smartphones erfolgt.
 
 \end{abstract}
 
@@ -85,12 +85,12 @@ Als Testdrohne wurde für eine Parrot Airborne Night Drone der Kategorie Mini-Dr
 
 Des weiteren verfügt die Drohne über zwei LED- Suchscheinwerfer, einen 1GB Flashspeicher für Fotos mit der eingebauten VGA(480x640) Mini-Kamera, einen Ultraschall-Reichweitenmesser sowie ein 3-Achsen-Gyroscope und einen 3-Achsen- Beschleunigungsmesser (+\/- 50mg).
 
-Nach einer Flugzeit von maximal 9 Minuten (ohne Schutz) kann der 550 mAh-Akku mittels Quickcharging in 25 aufgeladen werden. 
+Nach einer Flugzeit von maximal 9 Minuten (ohne Schutz) kann der 550 mAh-Akku mittels Quickcharging in 25 Minuten aufgeladen werden.
 
 \subsection{Verwendete Technologien}
 Wie in den vorangegangenen Kapitel schon erläutert wurde, gibt es aktuell keine App die eine komplette Steuerung über die Sensoren unterstützt. Aus diesen Gründen wurde zu Testzwecken ein Prototyp entwickelt, welcher die gestellten Anforderungen erfüllt. Aus Gründen der Flexibilität wurde für die Umsetzung des Prototypen für eine native Android-Anwendung zusammen mit dem SDK3 von Parrot entschieden. Die Mindestanforderung für Android ist Version 4.3.\\ 
 
-Als Verbindung zwischen Anwendung und Drohne kommt Drohnenbedingt Bluetooth in der Version 4.0 zum Einsatz. Während größere Drohnen W-Lan anbieten, beschränkt sich die Minidronen-Reihe auf Bluetooth. Dieses ist auf 20 meter begrenzt, was angesichts der kleinen Größe und der Nutzung in Gebäuden kein Nachteil ist. 
+Als Verbindung zwischen Anwendung und Drohne kommt Drohnenbedingt Bluetooth in der Version 4.0 zum Einsatz. Während größere Drohnen W-Lan anbieten, beschränkt sich die Minidronen-Reihe auf Bluetooth. Dadurch ist die Reichweite der Drohne auf 20 Meter begrenzt, was angesichts der kleinen Größe und der Nutzung in Gebäuden keinen Nachteil darstellt.
 
 \subsection{Zielgruppenbestimmung}
 Eine Einschränkung der Zielgruppe ergibt sich aus der Entwicklung des Prototyp für die Parrot Airborne Night - Reihe oder andere Parrot Flugdrohnen die mittels Bluetooth verbunden werden. Zusätzlich ist die Nutzung auf Android fähige Smartphone in der Version 4.3 oder höher beschränkt.
@@ -114,10 +114,27 @@ Abbildung \ref{fig:gameplay} zeigt grafisch wie die Steuerung mit Sensoren ausse
 \end{figure}
 
 
-Streng genommen könnte auch das auslösen der Kamera oder das Einschalten der LED zur Steuerung gehören. Da es sich bei den Tests aber um das reine Fliegen handelt, werden diese bei dem Prototyp nicht berücksichtigt.
+Streng genommen könnte auch das Auslösen der Kamera oder das Einschalten der LED zur Steuerung gehören. Da es sich bei den Tests aber um das reine Fliegen handelt, werden diese bei dem Prototyp nicht berücksichtigt.
 
-\subsection{Umsetzung des Prototypen} 
-Alle die im Kapitel Steuerung geforderten Steuerung galt es im Prototypen umzusetzen. 
+\subsection{Umsetzung des Prototypen}
+Als Platform des Prototypens wurde Android gewählt. Das von Parrot zur Verfügung gestellte SDK verlangt als Mindestanforderung die Android API 23, welches Android 6 entspricht.
+Somit grenzt sich der Einsatzbereich der App auf neue Android-Versionen ein.\\
+Als Grundlage für die Android-App kommt die Beispiel-Anwendung von Parrot zum Einsatz. Diese bot den Vorteil, dass die Implementierung des Verbindungsaufbaus bereits vorhanden war.
+\\
+Wie bereits erläutert, wird die Steuerung mithilfe des Geomagnetfeld-Sensors sowie dem Accelerometer umgesetzt. Für beide Sensoren wurden jeweils eine Controller-Klasse implementiert,
+die speziell den Steuerungsanteil des Sensors für die Drohne übernimmt.
+Der Geomagnetfeld-Sensor ist verantwortlich für die Steuerung der Drohne durch Kippen und Neigen des Smartphones und somit für die Bewegungsrichtung der Drohne.
+Vorteil der Verwendung des Geomagnetfeld-Sensors ist die leichtere Verarbeitung der daraus resultierenden Daten.\\
+Das Accelerometer wird verwendet, um Beschleunigungs-Bewegungen (Starten, Landen, Swipe) festzustellen.
+Zunächst betrachten wir die Auswertung der Geomagnetfeld-Daten: Hierbei liefert der Sensor in zuvor eingestellten Abständen die X-,Y- und Z-Lagen zurück. Dabei handelt es sich um Float-Werte
+zwischen 1 und -1. Dabei einspricht die jeweilige Grenze einer Drehung um 90° oder -90° um die bestimmt Achse. Diese Werte werden von der Anwendung in Teilabschnitten in Steuerbefehle an die
+Drohne weitergereicht. Die Drohne nimmt dabei Werte von -100 bis 100 entgegen, was prozentual der maximalen Neigung enspricht. Für die Einteilung der Werte des Sensors wurden Schritte zwischen
+(-)0.15, (-)0.25, > (-)0.25 verwendet. Neigungen mit Werten zwischen (-)0.15 und (-)0.25 ewirken eine 40%-ige Neigung, Werte größer (-)0.25 eine 60%-ige Neigung. Für Werte kleiner
+(-)0.15 werden als Null-Position angenommen und die Drohnen-Neigung wird auf 0 zurückgesetzt.\\
+Bei der Verarbeitung der Daten des Accelerometers werden die Werte in eine lineare Komponente und eine Gravitatinoskomponente aufgeteilt. Die lineare ist stets positiv und ermöglicht eine
+schnelle Filterung bzw. ein schnelles Stepping zur Steuerung. Die Graviatinos-Komponente dagegen dient als Richtungs-Indikator.
+Als Mindest-Grenzwert der linearen Komponente ist 6 festgelegt. Sind lineare Werte größer, erfolgt ein Steuerbefehl an die Drohne mit dem der Beschleunigungsachse verknüpften Richtung.
+Dies sind Start- und Landung auf der Z-Achse sowie Drehungen um 90° bzw. 180° Grad um die Drehachse der Drohne.
 
 \section{Ergebnisse und Evaluation}
 Um die eingangs gestellte Frage ehrlich beantworten zu können muss eine Evaluation durchgeführt werden in der eine möglichst breite Maße an verschiedenen Personen den Prototyp unter gleichen Bedingungen Testet. Hierfür wurde ein Parkour aufgebaut welcher einmal mit den von Parrot gelieferten Steuerungsmöglichkeiten und einmal mit dem entwickelten Prototyp getestet werden muss. Der Parkour ist so aufgebaut, dass alle Funktionen mindestens einmal dran kommen. 
@@ -125,7 +142,7 @@ Die Alterspanne der 7 Probanden lag im Bereich von 11 bis 65 Jahren. Es wurden b
 Zur Einführung wurden ihnen die jeweiligen Steuerungsarten erklärt. Aus Gründen der Fairness wurde auf vorherige Testflüge verzichtet.
 
 %TODO bessere idee?
-Als Ausgangslage wird die Drohne in einem Abstand von 1 meter vor die Testperson aus den Boden gestellt. Diese muss die Drohne starten und bis auf Augenhöhe in die Luft steigen lassen. Nachdem eine 180 Gras Drehung vollzogen wurde, muss die Drohne in einem Abstand von circa 1 meter um die Person herum navigiert werden. Befindet sie sich in Augenhöhe auf der gegenüberliegenden Seite der Position kann sie, nachdem sie zwei mal 90 Grad gedreht wurde, gelandet werden.
+Als Ausgangslage wird die Drohne in einem Abstand von 1 Meter vor die Testperson auf den Boden gestellt. Diese muss die Drohne starten und bis auf Augenhöhe in die Luft steigen lassen. Nachdem eine 180 Gras Drehung vollzogen wurde, muss die Drohne in einem Abstand von circa 1 meter um die Person herum navigiert werden. Befindet sie sich in Augenhöhe auf der gegenüberliegenden Seite der Position kann sie, nachdem sie zwei mal 90 Grad gedreht wurde, gelandet werden.
 Anschließend werden die Meinungen der Testpersonen zusammen mit den Beobachtung ausgewertet werden. Diese wurden gebeten ihr persönliches empfinden zu schildern mit welcher Steuerung sie Besser zurecht kamen und mit welcher sie meinen präzise Steuern zu können.
 %TODO Auswertung
 Das Ergebnis ......

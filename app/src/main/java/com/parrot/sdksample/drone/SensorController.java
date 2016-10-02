@@ -97,16 +97,14 @@ public class SensorController implements SensorEventListener {
 
                 final float dT = (event.timestamp - timestamp) * NS2S;
 
-//                Log.d("TIMESTAMP", "" + dT);
-
                 // Axis of the rotation sample, not normalized yet.
                 float axisX = event.values[0];
                 float axisY = event.values[1];
                 float axisZ = event.values[2];
 
 
-//
-//            // Calculate the angular speed of the sample
+
+            // Calculate the angular speed of the sample
                 float omegaMagnitude = (float) Math.sqrt(axisX * axisX + axisY * axisY + axisZ * axisZ);
 
                 // Normalize the rotation vector if it's big enough to get the axis
@@ -116,11 +114,11 @@ public class SensorController implements SensorEventListener {
                     axisY /= omegaMagnitude;
                     axisZ /= omegaMagnitude;
                 }
-//
-//            // Integrate around this axis with the angular speed by the timestep
-//            // in order to get a delta rotation from this sample over the timestep
-//            // We will convert this axis-angle representation of the delta rotation
-//            // into a quaternion before turning it into the rotation matrix.
+
+                // Integrate around this axis with the angular speed by the timestep
+                // in order to get a delta rotation from this sample over the timestep
+                // We will convert this axis-angle representation of the delta rotation
+                // into a quaternion before turning it into the rotation matrix.
                 float thetaOverTwo = omegaMagnitude * dT / 2.0f;
                 float sinThetaOverTwo = (float) Math.sin(thetaOverTwo);
                 float cosThetaOverTwo = (float) Math.cos(thetaOverTwo);
@@ -128,8 +126,6 @@ public class SensorController implements SensorEventListener {
                 deltaRotationVector[1] = sinThetaOverTwo * axisY;
                 deltaRotationVector[2] = sinThetaOverTwo * axisZ;
                 deltaRotationVector[3] = cosThetaOverTwo;
-
-//            Log.d("Position", ""+ deltaRotationVector[0] + " - "+ deltaRotationVector[1] + " - "+ deltaRotationVector[2] + " - "+ deltaRotationVector[3]);
 
                 this.x.setText(String.format("%f", axisX));
                 this.y.setText(String.format("%f", axisY));
