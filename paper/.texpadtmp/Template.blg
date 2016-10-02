@@ -3,36 +3,37 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: /Users/Stefan/Documents/workspace/fmi-ss2016/paper/.texpadtmp/Template.aux
 The style file: ../IEEEbib.bst
 Database file #1: ../Template.bib
-You've used 5 entries,
+Warning--empty journal in milker2012bewegungserkennung
+You've used 6 entries,
             1838 wiz_defined-function locations,
-            477 strings with 4465 characters,
-and the built_in function-call counts, 703 in all, are:
-= -- 61
-> -- 21
+            480 strings with 4562 characters,
+and the built_in function-call counts, 830 in all, are:
+= -- 71
+> -- 25
 < -- 0
-+ -- 10
-- -- 5
-* -- 39
-:= -- 95
-add.period$ -- 5
-call.type$ -- 5
-change.case$ -- 5
++ -- 12
+- -- 6
+* -- 45
+:= -- 118
+add.period$ -- 6
+call.type$ -- 6
+change.case$ -- 6
 chr.to.int$ -- 0
-cite$ -- 5
-duplicate$ -- 28
-empty$ -- 93
-format.name$ -- 5
-if$ -- 170
+cite$ -- 7
+duplicate$ -- 35
+empty$ -- 107
+format.name$ -- 6
+if$ -- 197
 int.to.chr$ -- 0
-int.to.str$ -- 5
-missing$ -- 1
-newline$ -- 24
-num.names$ -- 1
-pop$ -- 33
+int.to.str$ -- 6
+missing$ -- 2
+newline$ -- 29
+num.names$ -- 2
+pop$ -- 37
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 17
+skip$ -- 20
 stack$ -- 0
 substring$ -- 12
 swap$ -- 5
@@ -40,7 +41,8 @@ text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 2
-width$ -- 6
-write$ -- 49
+warning$ -- 1
+while$ -- 3
+width$ -- 7
+write$ -- 58
+(There was 1 warning)

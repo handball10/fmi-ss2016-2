@@ -5,6 +5,11 @@
   \url{https://www.parrot.com/de/zubehor/minidrohnen/parrot-flypad#parrot-flypad},
 \newblock [Stand:September 2016].
 
+\bibitem{milker2012bewegungserkennung}
+Sven Milker,
+\newblock ``Bewegungserkennung mit smartphones mittels deren sensoren,''
+\newblock 2012.
+
 \bibitem{freeflightapp}
 ``Freeflight {A}pp,''
   \url{https://play.google.com/store/apps/details?id=com.parrot.freeflight3&hl=de},

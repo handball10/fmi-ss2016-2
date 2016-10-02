@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.7)  2 OCT 2016 18:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.7)  2 OCT 2016 19:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -470,66 +470,66 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--7
  []
 
 
-Underfull \hbox (badness 6775) in paragraph at lines 9--12
+Underfull \hbox (badness 6775) in paragraph at lines 14--17
 []\OT1/ptm/m/n/10 ``Freeflight App,'' $\OT1/pcr/m/n/10 https : / / play . google . com /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9--12
+Underfull \hbox (badness 10000) in paragraph at lines 14--17
 \OT1/pcr/m/n/10 store / apps / details ? id = com . parrot .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14--17
+Underfull \hbox (badness 10000) in paragraph at lines 19--22
 []\OT1/ptm/m/n/10 ``Smarteyeglass und smart-watch,'' $\OT1/pcr/m/n/10 http :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14--17
+Underfull \hbox (badness 10000) in paragraph at lines 19--22
 \OT1/pcr/m/n/10 / / developer . sonymobile . com / 2015 / 01 / 05 /
  []
 
 
-Overfull \hbox (14.46622pt too wide) in paragraph at lines 14--17
+Overfull \hbox (14.46622pt too wide) in paragraph at lines 19--22
 \OT1/pcr/m/n/10 control-[]a-[]mini-[]drone-[]with-[]smarteyeglass /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14--17
+Underfull \hbox (badness 10000) in paragraph at lines 19--22
 \OT1/pcr/m/n/10 -[]and-[]smartwatch-[]2tutorial/$\OT1/ptm/m/n/10 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--30
+Underfull \hbox (badness 10000) in paragraph at lines 32--35
 []\OT1/ptm/m/n/10 ``Parrot Air-bor-ne Night Mi-ni-dro-ne,'' $\OT1/pcr/m/n/10 https :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--30
+Underfull \hbox (badness 10000) in paragraph at lines 32--35
 \OT1/pcr/m/n/10 / / www . parrot . com / de / minidrohnen /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--30
+Underfull \hbox (badness 10000) in paragraph at lines 32--35
 \OT1/pcr/m/n/10 parrot-[]airborne-[]night-[]maclane #
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--30
+Underfull \hbox (badness 10000) in paragraph at lines 32--35
 \OT1/pcr/m/n/10 parrot-[]airborne-[]night-[]maclane$\OT1/ptm/m/n/10 ,
  []
 
 ) [4] (/Users/Stefan/Documents/workspace/fmi-ss2016/paper/.texpadtmp/Template.aux) ) 
 Here is how much of TeX's memory you used:
- 2744 strings out of 493089
- 36506 string characters out of 6134843
- 107552 words of memory out of 5000000
- 6163 multiletter control sequences out of 15000+600000
+ 2745 strings out of 493089
+ 36536 string characters out of 6134843
+ 107555 words of memory out of 5000000
+ 6164 multiletter control sequences out of 15000+600000
  17809 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,8n,23p,1136b,295s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,8n,23p,1144b,295s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /Users/Stefan/Documents/workspace/fmi-ss2016/paper/.texpadtmp/Template.pdf (4 pages, 395377 bytes).
+Output written on /Users/Stefan/Documents/workspace/fmi-ss2016/paper/.texpadtmp/Template.pdf (4 pages, 394003 bytes).
 PDF statistics:
  47 PDF objects out of 1000 (max. 8388607)
  30 compressed objects within 1 object stream
