@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.7)  2 OCT 2016 17:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.7)  2 OCT 2016 18:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -396,12 +396,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 22.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
-
-Overfull \hbox (2.1944pt too wide) in paragraph at lines 43--45
-\OT1/ptm/m/n/10 Auf dem Rech-ten Joy-stick kann ei-ne schnel-le Kurs[]ande-
- []
-
-[1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+ [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 
@@ -413,52 +408,52 @@ Package pdftex.def Info: freeflight_mini.png used on input line 54.
  <gyro.jpg, id=11, 763.85374pt x 398.48875pt>
 File: gyro.jpg Graphic file (type jpg)
  <use gyro.jpg>
-Package pdftex.def Info: gyro.jpg used on input line 70.
+Package pdftex.def Info: gyro.jpg used on input line 69.
 (pdftex.def)             Requested size: 241.84842pt x 126.16914pt.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 81.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 80.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 81.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 80.
 
-Underfull \hbox (badness 1668) in paragraph at lines 88--89
+Underfull \hbox (badness 1668) in paragraph at lines 87--88
 []\OT1/ptm/m/n/10 Nach ei-ner Flug-zeit von ma-xi-mal 9 Mi-nu-ten (oh-ne
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
 
  []
 
 
-Overfull \hbox (1.57498pt too wide) in paragraph at lines 93--94
+Overfull \hbox (1.57498pt too wide) in paragraph at lines 92--93
 []\OT1/ptm/m/n/10 Als Ver-bin-dung zwi-schen An-wen-dung und Droh-ne kommt
  []
 
 [2 <./freeflight_mini.png> <./gyro.jpg>] <gameplay.png, id=17, 995.72pt x 597.23125pt>
 File: gameplay.png Graphic file (type png)
  <use gameplay.png>
-Package pdftex.def Info: gameplay.png used on input line 110.
+Package pdftex.def Info: gameplay.png used on input line 107.
 (pdftex.def)             Requested size: 241.84842pt x 145.06078pt.
-LaTeX Font Info:    Try loading font information for OML+ptm on input line 132.
+LaTeX Font Info:    Try loading font information for OML+ptm on input line 130.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omlptm.fd
 File: omlptm.fd 
 )
 LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 132.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 130.
 
-Overfull \hbox (30.32373pt too wide) in paragraph at lines 120--138
-\OT1/ptm/m/n/10 Wie be-reits erl[]autert, wird die Steue-rung mit-hil-fe des Geomagnetfeld-
+Underfull \hbox (badness 1237) in paragraph at lines 117--132
+\OT1/ptm/m/n/10 Geomagnetfeld-Sensors so-wie dem Ac-ce-le-ro-me-ter um-ge-
  []
 
 
-Overfull \hbox (0.74886pt too wide) in paragraph at lines 120--138
+Overfull \hbox (0.74886pt too wide) in paragraph at lines 117--132
 \OT1/ptm/m/n/10 Bewegungen (Star-ten, Lan-den, Swi-pe) fest-zu-stel-len. Zun[]achst
  []
 
 
-Underfull \vbox (badness 7238) has occurred while \output is active []
+Underfull \vbox (badness 2142) has occurred while \output is active []
 
  [3 <./gameplay.png>] (/Users/Stefan/Documents/workspace/fmi-ss2016/paper/.texpadtmp/Template.bbl
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 5.
@@ -528,13 +523,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--30
 Here is how much of TeX's memory you used:
  2744 strings out of 493089
  36506 string characters out of 6134843
- 108552 words of memory out of 5000000
+ 107552 words of memory out of 5000000
  6163 multiletter control sequences out of 15000+600000
  17809 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,8n,23p,1138b,295s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,8n,23p,1136b,295s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /Users/Stefan/Documents/workspace/fmi-ss2016/paper/.texpadtmp/Template.pdf (4 pages, 395607 bytes).
+Output written on /Users/Stefan/Documents/workspace/fmi-ss2016/paper/.texpadtmp/Template.pdf (4 pages, 395377 bytes).
 PDF statistics:
  47 PDF objects out of 1000 (max. 8388607)
  30 compressed objects within 1 object stream

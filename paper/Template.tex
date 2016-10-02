@@ -21,7 +21,7 @@
 \begin{document}
 \maketitle
 \begin{abstract}
-Drohne ist mittlerweile auch im Konsumbereich ein fest etablierter Begriff, der ein mit motorisierten Propellern angetriebenes Flugobjekt beschreibt. Die Steuerung erfolgt zumeist über eine Anwendung auf Smartphone / Tablet. Dabei wird hauptsächlich ein virtueller Joystick auf dem Bildschirm angezeigt der mit Gesten gesteuert wird.\\ Eine andere aber bisher aber weitestgehend eingeschränkt genutzte Art der Steuerung ist der Einsatz von Hilfe Gyroscope und Accelerometer des Smartphones. Eingeschränkt insofern, als dass nicht alle Möglichkeiten der Sensoren genutzt werden. An diesem Ansatz soll mit der Entwicklung einer nativen Android App für Smartphones angeknüpft werden. Ziel ist es, die Bewegungen, die vom Benutzer mit dem Smartphone getätigt werden, an die Drohne zu übertragen. Zusätzlich sollen Gesten das Steuern von Foto- und Videoaufnahmen und deren Übertragung auf das Display des Smartphones vervollständigen.\\ Am Ende gilt es die Frage zu beantworten, ob die Steuerung einer Drohne präzise genug ist, wenn diese komplett über Gyroscope und Accelerometer des Smartphones erfolgt.
+Drohne ist mittlerweile auch im Konsumbereich ein fest etablierter Begriff, der ein mit motorisierten Propellern angetriebenes Flugobjekt beschreibt. Die Steuerung erfolgt zumeist über eine Anwendung auf Smartphone / Tablet. Dabei wird hauptsächlich ein virtueller Joypad auf dem Bildschirm angezeigt der mit Gesten gesteuert wird.\\ Eine andere aber bisher aber weitestgehend eingeschränkt genutzte Art der Steuerung ist der Einsatz von Hilfe Gyroscope und Accelerometer des Smartphones. Eingeschränkt insofern, als dass nicht alle Möglichkeiten der Sensoren genutzt werden. An diesem Ansatz soll mit der Entwicklung einer nativen Android App für Smartphones angeknüpft werden. Ziel ist es, die Bewegungen, die vom Benutzer mit dem Smartphone getätigt werden, an die Drohne zu übertragen. Zusätzlich sollen Gesten das Steuern von Foto- und Videoaufnahmen und deren Übertragung auf das Display des Smartphones vervollständigen.\\ Am Ende gilt es die Frage zu beantworten, ob die Steuerung einer Drohne präzise genug ist, wenn diese komplett über Gyroscope und Accelerometer des Smartphones erfolgt.
 
 \end{abstract}
 
@@ -29,21 +29,21 @@ Drohne ist mittlerweile auch im Konsumbereich ein fest etablierter Begriff, der 
 \label{sec:einleitung}
 Immer mehr erfreuen sich sogenannte Drohnen im Konsumbereich an Beliebtheit. Diese neue Form des unbemannten Flugobjekte zeichnet sich zumeist dadurch aus, dass sie, anders als herkömmliche bekannte Modellflugzeuge, mindestens vier kleine Propeller hat welche über Elektromotoren angetrieben werden und die Drohne senkrecht starten lassen. Die Anzahl der Propeller kann variieren. Angefangen von Quadrocopter über Hexacopter und Octacopter bis hin zu Multicopter. Der Einsatzzweck einer solchen Drohne geht von Vermessungstechnik über Luftaufnahmen und Erkundung bis hin zur Jagd. In diesem Fall geht es jedoch um die für die im privatgebrauch übliche Hobby-Flugdrohne.
 
-Um eine Solche Drohne zu Steuern gibt es verschiedene Möglichkeiten. Abhängig von Modell lassen sich klassische Fernsteuerungen\cite{flypad} entweder direkt mit der Drohne Verbinden oder über Umweg mit Hilfe einer App. Nahezu jeder Drohnenhersteller bietet eine eigene App für alle gängigen Smartphones oder Tablets an. Die Verbindung findet je nach Modell über W-Lan oder Bluetooth statt. Für die Steuerung mittels App auf dem Gerät stehen in der bekanntesten Variante meist zwei digitale Joysticks zur Verfügung deren Bewegung umgerechnet und auf die Drohne Übertragen wird während das Gerät ruhig in der Hand liegt. Meistens ist über den linken Joystick die Veränderung der Höhe und eine Drehung möglich. Der Rechte Joystick ist für die horizontale Bewegung zuständig. Damit ist das Schwenken zur Seite sowie das Vorwärts- und Rückwärtsfliegen gemeint. Eine schwerere Variante der Steuerung ist die Richtungsangabe mittels Neigung des Gerätes.
+Um eine Solche Drohne zu Steuern gibt es verschiedene Möglichkeiten. Abhängig von Modell lassen sich klassische Fernsteuerungen\cite{flypad} entweder direkt mit der Drohne Verbinden oder über Umweg mit Hilfe einer App. Nahezu jeder Drohnenhersteller bietet eine eigene App für alle gängigen Smartphones oder Tablets an. Die Verbindung findet je nach Modell über W-Lan oder Bluetooth statt. Für die Steuerung mittels App auf dem Gerät stehen in der bekanntesten Variante meist zwei digitale Joypad zur Verfügung deren Bewegung umgerechnet und auf die Drohne Übertragen wird während das Gerät ruhig in der Hand liegt. Meistens ist über den linken Joypad die Veränderung der Höhe und eine Drehung möglich. Der rechte Joypad ist für die horizontale Bewegung zuständig. Damit ist das Schwenken zur Seite sowie das Vorwärts- und Rückwärtsfliegen gemeint. Eine schwerere Variante der Steuerung ist die Richtungsangabe mittels Neigung des Gerätes.
 \\ Die Idee ist es nun, eine Erweiterung der schweren Variante zu untersuchen, bei der zwei Sensoren des Smartphones zum Einsatz kommen. Dabei soll komplett auf die Bedienung von Touchscreen verzichtet und nur das Gerät selbst als Steuerungseinheit verwendet werden. Dazu dienen die beiden Sensoren (Gyroskop und Accelerometer) zur Erfassung der Bewegungen woraufhin das Smartphone diese umrechnet und auf die Drohne überträgt. 
 
 \section{Stand der Technik}
 \label{sec:verwandteArbeiten}
 \subsection{Drohnensteuerung}
 Neben einigen sehr wenigen Drittherstelleranwendungen bieten, wie bereits in der Einleitung erwähnt, auch die Hersteller der Drohnen eigene Anwendungen zum steuern der Drohne an.
-\\ Die bekannte Firma Parrot stellt eine Vielzahl verschiedener Apps zum Steuern bereit. Eine davon ist die FreeFlight-App \cite{freeflightapp}, die Steuerung durch den Gyroscope-Sensor unterstützt. Insgesamt bietet sie drei Möglichkeiten an wobei der Linke Joystick immer für die Höhe und Drehung zuständig ist:
+\\ Die bekannte Firma Parrot stellt eine Vielzahl verschiedener Apps zum Steuern bereit. Eine davon ist die FreeFlight-App \cite{freeflightapp}, die Steuerung durch den Gyroscope-Sensor unterstützt. Insgesamt bietet sie drei Möglichkeiten an wobei der linke Joypad immer für die Höhe und Drehung zuständig ist:
 \begin{description}
 \item Normal \\
-Wie in Abbildung \ref{fig:freeflight} gezeigt, wird auf den rechten Joystick ein Symbol angezeigt auf das dauerhaft gedrückt werden muss um die Flugrichtung der Drohne mit Neigung des Smartphone anzugeben.  
-\item Ass (Experte) \\ 
-Auf dem Rechten Joystick kann eine schnelle Kursänderung mittels Swipe-Geste angegeben werden während durch drücken des linken Joysticks und neigen des Smartphone eine Änderung der Flugrichtung erzielt werden kann. 
+Wie in Abbildung \ref{fig:freeflight} gezeigt, wird auf den rechten Joypad ein Symbol angezeigt auf das dauerhaft gedrückt werden muss um die Flugrichtung der Drohne mit Neigung des Smartphone anzugeben.  
+\item Ass (Experte) \\
+Auf dem rechten Joypad kann eine schnelle Kursänderung mittels Swipe-Geste angegeben werden während durch drücken des linken Joypad und neigen des Smartphone eine Änderung der Flugrichtung erzielt werden kann. 
 \item Joypad\\
-Hierbei handelt es sich um die standardmäßige Steuerung der Drohne mittels Bewegen der beiden Joysticks
+Hierbei handelt es sich um die standardmäßige Steuerung der Drohne mittels Bewegen der beiden Joypad
 \end{description}
 
 Bei Normal und Ass fliegt die Drohne in die Richtung in der das Smartphone geneigt wird ohne sich dabei in diese zu drehen. Eine Höhenveränderung oder Drehen durch Bewegung ist in keiner Variante möglich. Auf eine Implementierung des Accelerometer wurde hierbei verzichtet.
@@ -63,7 +63,6 @@ Bereits Anfang 2015 hat Sony ein Projekt vorgestellt, in dem eine Drohne mittels
 Die in Abbildung \ref{fig:gyro} gezeigten Sensoren finden in vielen Bereichen Verwendung und sind bereits in jedem aktuellen Smartphone standardmäßig verbaut. 
 Sie werden meistens in Kombination genutzt wie beispielsweise bei der Erkennung von Bewegungsänderung oder der Messung von physischen Aktivitäten \cite{wu2012classification}. Aber auch bei Spielen sind sie ein gern genutztes Hilfsmittel um in Rennspielen das Lenken eines Fahrzeuges zu simulieren oder einen Balanceakt zu meistern. 
 Um die derzeitige Lage oder Beschleunigung des Gerätes zu ermitteln, kommt der Accelerometer oder auch Beschleunigungssensor zum Einsatz. Mittels der Schwerkraft wird ermittelt in welche Richtung das Smartphone bewegt wird. In der Regel kommen die X- Y- und Z-Achse zum Einsatz. Die rotatorische Geschwindigkeit und somit auch die Drehbewegung des Smartphones werden vom Gyroskop gemessen. Dazu wird die Corioliskraft und das sogenannte Stimmgabelprinzip genutzt. Hier kommen Längs- Quer und Hochachse für die Positionsbestimmung im Raum zum Einsatz.
-%TODO ändern von Gyroscope zu Gravitartionssensor 
 \begin{figure}
 \begin{minipage}[b]{1.0\linewidth}
   \centering
@@ -98,11 +97,9 @@ Eine Einschränkung der Zielgruppe ergibt sich aus der Entwicklung des Prototyp 
 \subsection{Vorgesehene Steuerung}
 Die sinnvolle Erweiterung der bereits bestehen Steuerung ist die Kernaufgabe des Prototyp. Mit einer guten Umsetzung kann ein präzises Steuern nur mit Sensoren möglich sein. Wie bereits in der Stand der Technik beschrieben, haben beide Sensoren verschiedene Eigenschaften die sie liefern. Diese gilt es nun so einzusetzen, dass eine Steuerung durch Bewegungen so einfach wie möglich ist. Grundsätzlich gibt es an der bisher von Parrot zur Verfügung gestellten Form der Steuerung durch Bewegung nichts zu kritisieren. Sie ist vom Prinzip her logisch aufgebaut so dass der Benutzer sie Intuitive bedienen kann ohne vorher eine Betriebsanleitung lesen zu müssen. 
 
-Daraus ergibt sich, dass zwei der drei Achsen des Gyroscopes schon in Verwendung sind. Nimmt man die Verteilung der in Abbildung \ref{fig:gyro} gezeigten Sensoren an, so ist die X-Achse bereits für die seitliche und die Y-Achse für die vor und zurück Bewegung der Drohne zuständig. Als erste Neuerung soll die Z-Achse genutzt werden um die Drehungsfunktion des linken Joysticks zu implementieren. 
+Daraus ergibt sich, dass zwei der drei Achsen des Gyroscopes schon in Verwendung sind. Nimmt man die Verteilung der in Abbildung \ref{fig:gyro} gezeigten Sensoren an, so ist die X-Achse bereits für die seitliche und die Y-Achse für die vor und zurück Bewegung der Drohne zuständig. Als erste Neuerung soll die Z-Achse genutzt werden um die Drehungsfunktion des linken Joypad zu implementieren. 
 
-Eine weitere Funktion des linken Joysticks ist die Änderung der Höhe. Hierfür eignet sich besondern die in Abbildung \ref{fig:gyro} gezeigte Z-Achse des Accelerometer. Ebenfalls kann durch eine schnelle Auf-Bewegung die Drohne starten und durch eine schnelle Abwärts-Bewegung landen. Aber auch die Swipe-Funktionen aus der Experten Variante sollen mittels Accelerometer umgesetzte werden. Die 90 Grad Drehung kann durch eine rasche Bewegung in die jeweilige Richtung ausgelöst werden. Eine schnelle Bewegung nach vorne sorgt für eine 180 Grad-Drehung über die linke Seite und eine schnelle Bewegung nach hinten für eine über die rechte Seite. 
-
-Abbildung \ref{fig:gameplay} zeigt grafisch wie die Steuerung mit Sensoren aussehen soll. 
+Eine weitere Funktion des linken Joypad ist die Änderung der Höhe. Hierfür eignet sich besondern die in Abbildung \ref{fig:gyro} gezeigte Z-Achse des Accelerometer. Ebenfalls kann durch eine schnelle Auf-Bewegung die Drohne starten und durch eine schnelle Abwärts-Bewegung landen. Aber auch die Swipe-Funktionen aus der Experten Variante sollen mittels Accelerometer umgesetzte werden. Die 90 Grad Drehung kann durch eine rasche Bewegung in die jeweilige Richtung ausgelöst werden. Eine schnelle Bewegung nach vorne sorgt für eine 180 Grad-Drehung über die linke Seite und eine schnelle Bewegung nach hinten für eine über die rechte Seite. Abbildung \ref{fig:gameplay} zeigt grafisch wie die Steuerung mit Sensoren aussehen soll. 
 
 \begin{figure}
 \begin{minipage}[b]{1.0\linewidth}
@@ -121,7 +118,8 @@ Als Platform des Prototypen wurde Android gewählt. Das von Parrot zur Verfügun
 Somit grenzt sich der Einsatzbereich der App auf neue Android-Versionen ein.\\
 Als Grundlage für die Android-App kommt die Beispiel-Anwendung von Parrot zum Einsatz. Diese bot den Vorteil, dass die Implementierung des Verbindungsaufbaus bereits vorhanden war.
 \\
-Wie bereits erläutert, wird die Steuerung mithilfe des Geomagnetfeld-Sensors sowie dem Accelerometer umgesetzt. Für beide Sensoren wurden jeweils eine Controller-Klasse implementiert,
+Wie bereits erläutert, wird die Steuerung mithilfe des \\
+Geomagnetfeld-Sensors sowie dem Accelerometer umgesetzt. Für beide Sensoren wurden jeweils eine Controller-Klasse implementiert,
 die speziell den Steuerungsanteil des Sensors für die Drohne übernimmt.
 Der Geomagnetfeld-Sensor ist verantwortlich für die Steuerung der Drohne durch Kippen und Neigen des Smartphones und somit für die Bewegungsrichtung der Drohne.
 Vorteil der Verwendung des Geomagnetfeld-Sensors ist die leichtere Verarbeitung der daraus resultierenden Daten.\\
@@ -130,30 +128,27 @@ Zunächst betrachten wir die Auswertung der Geomagnetfeld-Daten: Hierbei liefert
 zwischen 1 und -1. Dabei einspricht die jeweilige Grenze einer Drehung um 90 Grad oder -90 Grad um die bestimmt Achse. Diese Werte werden von der Anwendung in Teilabschnitten in Steuerbefehle an die
 Drohne weitergereicht. Die Drohne nimmt dabei Werte von -100 bis 100 entgegen, was prozentual der maximalen Neigung entspricht. Für die Einteilung der Werte des Sensors wurden Schritte zwischen
 (-)0.15, (-)0.25, \textgreater{} (-)0.25 verwendet. Neigungen mit Werten zwischen (-)0.15 und (-)0.25 wirken eine 40\%-ige Neigung, Werte größer (-)0.25 eine 60\%-ige Neigung. Für Werte kleiner
-(-)0.15 werden als Null-Position angenommen und die Drohnen-Neigung wird auf 0 zurückgesetzt.\\
-Bei der Verarbeitung der Daten des Accelerometers werden die Werte in eine lineare Komponente und eine Gravitatinoskomponente aufgeteilt. Die lineare ist stets positiv und ermöglicht eine
-schnelle Filterung bzw. ein schnelles Stepping zur Steuerung. Die Graviatinoskomponente dagegen dient als Richtungs-Indikator.
+(-)0.15 werden als Null-Position angenommen und die Drohnen-Neigung wird auf 0 zurückgesetzt.
+
+Bei der Verarbeitung der Daten des Accelerometers werden die Werte in eine lineare Komponente und eine Gravitatinoskomponente aufgeteilt. Die lineare ist stets positiv und ermöglicht eine schnelle Filterung bzw. ein schnelles Stepping zur Steuerung. Die Graviatinoskomponente dagegen dient als Richtungs-Indikator.
 Als Mindest-Grenzwert der linearen Komponente ist 6 festgelegt. Sind lineare Werte größer, erfolgt ein Steuerbefehl an die Drohne mit dem der Beschleunigungsachse verknüpften Richtung.
 Dies sind Start- und Landung auf der Z-Achse sowie Drehungen um 90 Grad bzw. 180 Grad um die Drehachse der Drohne.
 
 \section{Ergebnisse und Evaluation}
-Um die eingangs gestellte Frage ehrlich beantworten zu können muss eine Evaluation durchgeführt werden in der eine möglichst breite Maße an verschiedenen Personen den Prototyp unter gleichen Bedingungen Testet. Hierfür wurde ein Parkour aufgebaut welcher einmal mit den von Parrot gelieferten Steuerungsmöglichkeiten und einmal mit dem entwickelten Prototyp getestet werden muss. Der Parkour ist so aufgebaut, dass alle Funktionen mindestens einmal dran kommen. 
-Die Alterspanne der 7 Probanden lag im Bereich von 11 bis 65 Jahren. Es wurden bewusste Tester ausgesucht die keinerlei Vorkenntnisse mit dem Fliegen einer Drohne haben. 
-Zur Einführung wurden ihnen die jeweiligen Steuerungsarten erklärt. Aus Gründen der Fairness wurde auf vorherige Testflüge verzichtet.
+Um die eingangs gestellte Frage ehrlich beantworten zu können muss eine Evaluation durchgeführt werden in der eine möglichst breite Maße an verschiedenen Personen den Prototyp unter gleichen Bedingungen Testet. Hierfür wurde ein Parkour aufgebaut welcher einmal mit den von Parrot gelieferten Steuerungsmöglichkeiten und einmal mit dem entwickelten Prototyp getestet werden muss. Der Parkour ist so aufgebaut, dass alle Funktionen mindestens einmal dran kommen. Die Alterspanne der 7 Probanden lag im Bereich von 11 bis 65 Jahren. Es wurden bewusste Tester ausgesucht die keinerlei Vorkenntnisse mit dem Fliegen einer Drohne haben. 
 
-%TODO bessere idee?
-Als Ausgangslage wird die Drohne in einem Abstand von 1 Meter vor die Testperson auf den Boden gestellt. Diese muss die Drohne starten und bis auf Augenhöhe in die Luft steigen lassen. Nachdem eine 180 Gras Drehung vollzogen wurde, muss die Drohne in einem Abstand von circa 1 meter um die Person herum navigiert werden. Befindet sie sich in Augenhöhe auf der gegenüberliegenden Seite der Position kann sie, nachdem sie zwei mal 90 Grad gedreht wurde, gelandet werden.
-Anschließend werden die Meinungen der Testpersonen zusammen mit den Beobachtung ausgewertet werden. Diese wurden gebeten ihr persönliches empfinden zu schildern mit welcher Steuerung sie Besser zurecht kamen und mit welcher sie meinen präzise Steuern zu können.
-%TODO Auswertung
+Zur Einführung wurden die jeweiligen Steuerungsmethoden erklärt. Aus Gründen der Fairness wurde auf vorherige Testflüge verzichtet. Als Ausgangslage wird die Drohne in einem geringen Abstand vor die Testperson auf eine gekennzeichnete Fläche gestellt. In 1 Meter Abständen wurden vier Hütchen aufgestellt. Es galt die Drohne zu Starten, sie durch den Slalom zu manövrieren und sie nach einer 180 Grad Drehung auf eine weitere gekennzeichnete Fläche sicher zu Landen. 
 
-Bei der Auswertung der Tests konnte festgestellt werden, dass die Steuerung durchaus Potential hat, den Steuerprozess zu vereinfachen. Allerdings erwies sich die prototypische Anwendung in einigen Fällen noch als zu unpräzise, sodass eine Verfeinerung der Steuerkomponenten nötig ist. Weiterhin ergaben die Tests, dass das Anwendungsbiet der Steuerung sich eher bei Drohnen-Wettkämpfen mit Parcours wiederfindet, da im obligatorischen Anwendungsfall eine traditionelle Steuereinheit deutlich effektiver ist.
+Anschließend werden die Meinungen der Testpersonen zusammen mit den Beobachtung ausgewertet werden. Diese wurden gebeten ihr persönliches empfinden zu schildern mit welcher Steuerung sie Besser zurecht kamen und mit welcher sie meinen präziser Steuern zu können.
+
+Bei der Auswertung der Tests konnte festgestellt werden, dass die Steuerung durchaus Potential hat, den Steuerprozess zu vereinfachen. Allerdings erwies sich die prototypische Anwendung in einigen Fällen noch als zu unpräzise, sodass eine Steuerung mit Hilfe der Joypad als besser erwies. Jedoch wurden ebenfalls die Steuerungsmodi Normal und Ass als gewöhnungsbedürftig und schwierig empfunden.
 
 \section{Zusammenfassung und Ausblick}
 Um herauszufinden, ob es möglich ist eine Drohne präzise nur mit Sensoren des Smartphone zu Steuern wurde ein Prototyp entwickelt. Anschließend wurden die verschiedenen Steuerungsmöglichkeiten Personen gegeben und diese nach ihrer Meinung gefragt. Dabei stellte sich heraus, dass die Sensoren-Steuerung besser funktioniert als gedacht aber im Vergleich zu den bereits vorhandenen Möglichkeiten teilweise zu unpräzise ist. 
 
 Daraus ergibt sich, dass die eingangs aufgestellte Fragestellung nicht bestätigt werden kann. Dennoch ist es eine interessante alternative zu den traditionellen Steuerungsmethoden und kann mit Einbußen der Präzision ohne weiteres genutzt werden.
 
-Eine Fertigung des Prototypen ist nicht geplant. Er diente lediglich dazu Tests durchzuführen.
+Eine Fertigung des Prototypen ist nicht geplant. Er diente lediglich dazu, diese Tests durchzuführen.
 
 \bibliography{Template}{}
 \bibliographystyle{IEEEbib}
