@@ -18,6 +18,7 @@ import com.parrot.arsdk.arcommands.ARCOMMANDS_MINIDRONE_PILOTINGSTATE_FLYINGSTAT
 import com.parrot.arsdk.arcontroller.ARCONTROLLER_DEVICE_STATE_ENUM;
 import com.parrot.arsdk.ardiscovery.ARDiscoveryDeviceService;
 import com.parrot.sdksample.R;
+import com.parrot.sdksample.drone.AccelerationController;
 import com.parrot.sdksample.drone.MiniDrone;
 import com.parrot.sdksample.drone.SensorController;
 
@@ -38,6 +39,8 @@ public class MiniDroneActivity extends AppCompatActivity {
 
     private SensorController sensorController;
 
+    private AccelerationController accelerationController;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,6 +60,8 @@ public class MiniDroneActivity extends AppCompatActivity {
                 (TextView) findViewById(R.id.textY),
                 (TextView) findViewById(R.id.textZ)
         );
+
+        accelerationController = new AccelerationController(mMiniDrone, (SensorManager) getSystemService(Context.SENSOR_SERVICE));
 
         initIHM();
     }
@@ -103,6 +108,7 @@ public class MiniDroneActivity extends AppCompatActivity {
     public void onDestroy()
     {
         mMiniDrone.dispose();
+        sensorController.disable();
         super.onDestroy();
     }
 
@@ -144,7 +150,7 @@ public class MiniDroneActivity extends AppCompatActivity {
                 }
             }
         });
-
+/*
         findViewById(R.id.takePictureBt).setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 mMiniDrone.takePicture();
@@ -362,7 +368,7 @@ public class MiniDroneActivity extends AppCompatActivity {
                 return true;
             }
         });
-
+*/
         mBatteryLabel = (TextView) findViewById(R.id.batteryLabel);
     }
 
@@ -372,10 +378,12 @@ public class MiniDroneActivity extends AppCompatActivity {
             switch (state)
             {
                 case ARCONTROLLER_DEVICE_STATE_RUNNING:
+                    accelerationController.setActive();
                     mConnectionProgressDialog.dismiss();
                     break;
 
                 case ARCONTROLLER_DEVICE_STATE_STOPPED:
+                    accelerationController.disableActive();
                     // if the deviceController is stopped, go back to the previous activity
                     mConnectionProgressDialog.dismiss();
                     finish();
@@ -397,17 +405,17 @@ public class MiniDroneActivity extends AppCompatActivity {
                 case ARCOMMANDS_MINIDRONE_PILOTINGSTATE_FLYINGSTATECHANGED_STATE_LANDED:
                     mTakeOffLandBt.setText("Take off");
                     mTakeOffLandBt.setEnabled(true);
-                    mDownloadBt.setEnabled(true);
+//                    mDownloadBt.setEnabled(true);
                     break;
                 case ARCOMMANDS_MINIDRONE_PILOTINGSTATE_FLYINGSTATECHANGED_STATE_FLYING:
                 case ARCOMMANDS_MINIDRONE_PILOTINGSTATE_FLYINGSTATECHANGED_STATE_HOVERING:
                     mTakeOffLandBt.setText("Land");
                     mTakeOffLandBt.setEnabled(true);
-                    mDownloadBt.setEnabled(false);
+//                    mDownloadBt.setEnabled(false);
                     break;
                 default:
                     mTakeOffLandBt.setEnabled(false);
-                    mDownloadBt.setEnabled(false);
+//                    mDownloadBt.setEnabled(false);
             }
         }
 
